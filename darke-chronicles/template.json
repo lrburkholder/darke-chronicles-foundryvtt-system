@@ -1,0 +1,67 @@
+{
+    "Actor": {
+      "types": ["hero", "pawn", "villain"],
+      "templates": {
+        "background": {
+          "biography": "",
+          "hairColor": "blue"
+        },
+        "resources": {
+          "health": {
+            "min": 0,
+            "value": 10,
+            "max": 10
+          },
+          "fortitude": {
+            "min": 0,
+            "value": 0,
+            "max": 100
+          },
+          "will": {
+            "min": 0,
+            "value": 0,
+            "max": 100
+          },
+          "reflex": {
+            "min": 0,
+            "value": 0,
+            "max": 100
+          }
+        }
+      },
+      "hero": {
+        "templates": ["background", "resources"],
+        "goodness": {
+          "value": 5,
+          "max": 10
+        }
+      },
+      "pawn": {
+        "templates": ["resources"]
+      },
+      "villain": {
+        "templates": ["background", "resources"],
+        "wickedness": {
+          "value": 5,
+          "max": 100
+        }
+      }
+    },
+    "Item": {
+      "types": ["weapon", "spell"],
+      "templates": {
+        "rarity": {
+          "rarity": "Common",
+          "price": 20
+        }
+      },
+      "weapon": {
+        "templates": ["rarity"],
+        "damage": 5
+      },
+      "spell": {
+        "templates": ["rarity"],
+        "cost": 2
+      }
+    }
+    }
