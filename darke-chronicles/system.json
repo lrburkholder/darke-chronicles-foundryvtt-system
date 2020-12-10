@@ -20,18 +20,30 @@
       {
         "name": "monsters",
         "label": "Monsters",
-        "system": "mysystem",
-        "module": "mysystem",
-        "path": "packs/monsters.db",
+        "system": "darke-chronicles",
+        "path": "./packs/monsters.db",
         "entity": "Actor"
       },
       {
         "name": "items",
         "label": "Items",
-        "system": "mysystem",
-        "module": "mysystem",
-        "path": "packs/items.db",
+        "system": "darke-chronicles",
+        "path": "./packs/items.db",
         "entity": "Item"
+      },
+      {
+        "name": "spells",
+        "label": "Spells",
+        "system": "darke-chronicles",
+        "path": "./packs/spells.db",
+        "entity": "Item"
+      },
+      {
+        "name": "heroes",
+        "label": "Known Heroes",
+        "system": "darke-chronicles",
+        "path": "./packs/heroes.db",
+        "entity": "Actor"
       }
     ],
     "languages": [
@@ -45,9 +57,9 @@
     "initiative": "1d20",
     "gridDistance": 5,
     "gridUnits": "ft",
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power",
-    "url": "https://your/hosted/system/repo/",
-    "manifest": "https://your/hosted/system/repo/system.json",
+    "primaryTokenAttribute": "attributes.hp",
+    "secondaryTokenAttribute": null,
+    "url": "https://github.com/lrburkholder/darke-chronicles-foundryvtt-system",
+    "manifest": "https://github.com/lrburkholder/darke-chronicles-foundryvtt-system/blob/main/system.json",
     "download": "https://your/packaged/download/archive.zip"
   }
